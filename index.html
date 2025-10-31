@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afsar Azam — AI & Data Science Developer</title>
+  <meta name="description" content="Afsar Azam | AI & Data Science Developer Portfolio — Showcasing AI projects, data analysis, and intelligent web experiences.">
+  <meta property="og:title" content="Afsar Azam — Portfolio" />
+  <meta property="og:description" content="Explore my AI and Data Science projects, future ideas, and professional journey." />
+  <meta property="og:image" content="assets/greenloop.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script defer src="chatbot.js"></script>
+  <script defer src="chart-setup.js"></script>
+  <link rel="icon" href="assets/logo.png" />
+</head>
+
+<body>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Navbar -->
+  <header>
+    <h1 class="logo">Afsar Azam</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h2>Hi, I'm <span class="highlight">Afsar Azam</span></h2>
+    <h3><span id="typed-text"></span></h3>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="Afsar_Azam_Resume.pdf" download class="btn-outline">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I'm an <b>AI & Data Science Developer</b> passionate about building intelligent, data-driven systems.
+      My expertise lies in <b>Python, Machine Learning, and Frontend Design</b> — crafting smart and visually engaging products.
+    </p>
+  </section>
+
+  <!-- Skills (Radar Chart) -->
+  <section id="skills" class="section skills">
+    <h2>My Technical Skills</h2>
+    <canvas id="skillChart"></canvas>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2>Featured Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="ai">AI</button>
+      <button class="filter-btn" data-category="web">Web</button>
+      <button class="filter-btn" data-category="data">Data Science</button>
+    </div>
+
+    <div class="project-grid">
+      <!-- GreenLoop -->
+      <div class="project-card" data-category="ai web">
+        <img src="assets/greenloop.png" alt="GreenLoop" loading="lazy" />
+        <h3>GreenLoop 🌿</h3>
+        <p>AI-powered sustainability platform turning waste into compost and guiding urban gardening.</p>
+        <div class="links">
+          <a href="https://afsar426.github.io/GREENLOOP/" target="_blank">Live Demo</a>
+          <a href="https://github.com/Afsar426/GREENLOOP" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Jarvis -->
+      <div class="project-card" data-category="ai web">
+        <img src="assets/jarvis.png" alt="Jarvis AI" loading="lazy" />
+        <h3>Jarvis 🤖</h3>
+        <p>Voice-powered assistant executing system commands like “Open Spotify” or “Search the web”.</p>
+        <div class="links">
+          <a href="https://afsar426.github.io/JARVIS/" target="_blank">Live Demo</a>
+          <a href="https://github.com/Afsar426/JARVIS" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- MyMoneyMentor -->
+      <div class="project-card" data-category="ai data">
+        <img src="assets/mymoneymentor.png" alt="MyMoneyMentor-AI" loading="lazy" />
+        <h3>MyMoneyMentor-AI 💰</h3>
+        <p>AI-based financial planner offering smart insights and budget recommendations.</p>
+      </div>
+
+      <!-- COVID Analysis -->
+      <div class="project-card" data-category="data">
+        <img src="assets/covid.png" alt="COVID-19 Analysis" loading="lazy" />
+        <h3>COVID-19 Trend Analysis 📊</h3>
+        <p>Visualizing global COVID-19 data and forecasting infection trends using Python.</p>
+      </div>
+
+      <!-- Netflix Analysis -->
+      <div class="project-card" data-category="data">
+        <img src="assets/netflix.png" alt="Netflix Analysis" loading="lazy" />
+        <h3>Netflix Data Analysis 🎬</h3>
+        <p>Exploring Netflix dataset to uncover patterns and global content distribution trends.</p>
+      </div>
+
+      <!-- Library System -->
+      <div class="project-card" data-category="web">
+        <img src="assets/library.png" alt="Library Management" loading="lazy" />
+        <h3>Library Management System 📚</h3>
+        <p>C++ and MySQL-based management system for digital library operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section achievements">
+    <h2>Achievements & Certifications 🏆</h2>
+    <ul>
+      <li>🏅 AI/ML Hackathon Finalist — SAGE University</li>
+      <li>📜 Python & Data Science Certification — Coursera</li>
+      <li>💡 Project Excellence Award — MyMoneyMentor-AI</li>
+      <li>🎖️ Sustainable Innovation — GreenLoop Project Recognition</li>
+    </ul>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="section timeline">
+    <h2>My Journey</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <h3>2024 — MyMoneyMentor-AI</h3>
+        <p>Developed an AI-powered financial planning web app as part of college project.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2025 — GreenLoop & Jarvis</h3>
+        <p>Launched two innovative projects integrating AI & sustainability.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Future — Expanding into AI Research</h3>
+        <p>Building intelligent systems that combine ML, NLP, and Web Technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div id="chatbot">
+    <div id="chatbot-header">💬 Chat with Afsar</div>
+    <div id="chatbot-body">
+      <div class="bot-msg">Hi! Ask me about my projects or skills 😊</div>
+    </div>
+    <input type="text" id="chatbot-input" placeholder="Type a message..." />
+  </div>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:afsarazam404@gmail.com">afsarazam404@gmail.com</a></p>
+    <div class="social">
+      <a href="https://linkedin.com/in/afsar-azam-170046330" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Afsar426" target="_blank">GitHub</a>
+      <a href="mailto:afsarazam404@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-signature">— Afsar Azam ✨</div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop">↑</button>
+
+</body>
+</html>
